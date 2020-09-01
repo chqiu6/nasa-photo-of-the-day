@@ -1,7 +1,10 @@
 import React from "react";
+import styled from "styled-components";
+import {Card, Nav, Navbar, NavItem, NavLink, Alert} from "reactstrap";
 
 const NasaCard = (props) => {
     return (
+        
         <div className = "cardContainer">
             <h1>{props.data.title}</h1>
             <h2>{props.data.copyright}</h2>

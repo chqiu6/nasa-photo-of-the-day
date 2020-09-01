@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import NasaData from "./Components/NasaData";
+import {Card, Nav, Navbar, NavItem, NavLink, Alert} from "reactstrap";
 
 function App() {
   // useEffect(() => {
@@ -16,11 +17,14 @@ function App() {
   // })
   return (
     <div className="App">
+      {/* <div className = "nav"> */}
+        <Navbar color = "dark" >
+        <Nav>
+        <NavLink href = "https://api.nasa.gov/">Nasa API</NavLink>
+        </Nav>
+        </Navbar>
+        {/* </div> */}
       <NasaData />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
     </div>
   );
 }
